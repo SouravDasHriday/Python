@@ -5,7 +5,7 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg?style=for-the-badge&logo=python)
 ![Terraform](https://img.shields.io/badge/Terraform-IaC-623CE4.svg?style=for-the-badge&logo=terraform)
 ![AWS](https://img.shields.io/badge/AWS-S3-FF9900.svg?style=for-the-badge&logo=amazon-aws)
-![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+
 
 **A comprehensive repository documenting Python programming journey with automation projects and Infrastructure as Code (IaC) implementations**
 
@@ -30,13 +30,12 @@ This repository serves as a showcase of my Python development journey, containin
 ---
 
 ## 📁 Project Structure
-├── project_01/ # Infrastructure as Code (Terraform) project
-│ └── [Terraform configs & modules]
-├── backup_with_s3.py # Automated backups to Amazon S3
-├── calculator.py # Command-line calculator application
-├── hello.py # Introductory "Hello, World!" program
-├── system_utility.py # System monitoring and maintenance tool
-└── README.md # This file
+- ├── project_01/ # Infrastructure as Code (Terraform) project
+--  │ └── [Terraform configs & modules]
+- ├── backup_with_s3.py # Automated backups to Amazon S3
+- ├── calculator.py # Command-line calculator application
+- ├── hello.py # Introductory "Hello, World!" program
+- ├── system_utility.py # System monitoring and maintenance tool
 
 
 ---
@@ -134,6 +133,6 @@ Contribution Guidelines
 
 📧 Contact & Support
 
-Author: Sourav Das
-Email: eee.das.sourav@gmail.com
-LinkedIn: www.linkedin.com/in/eee-souravdas/
+    Author: Sourav Das
+    Email: eee.das.sourav@gmail.com
+    LinkedIn: www.linkedin.com/in/eee-souravdas/
