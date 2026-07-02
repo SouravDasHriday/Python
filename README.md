@@ -31,7 +31,6 @@ This repository serves as a showcase of my Python development journey, containin
 
 ## 📁 Project Structure
 - ├── project_01/ # Infrastructure as Code (Terraform) project
---  │ └── [Terraform configs & modules]
 - ├── backup_with_s3.py # Automated backups to Amazon S3
 - ├── calculator.py # Command-line calculator application
 - ├── hello.py # Introductory "Hello, World!" program
@@ -131,8 +130,23 @@ Contribution Guidelines
     Add appropriate unit tests
 
 
-📧 Contact & Support
+---
 
-    Author: Sourav Das
-    Email: eee.das.sourav@gmail.com
-    LinkedIn: www.linkedin.com/in/eee-souravdas/
+## 📧 Contact & Connect
+
+**Sourav Das Hriday**
+
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SouravDasHriday)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/eee-souravdas/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:eee.das.sourav@gmail.com)
+
+**Project Link**: [https://github.com/SouravDasHriday/Python](https://github.com/SouravDasHriday/Python)
+
+---
+
+<div align="center">
+
+**Happy Coding! 🐍**
+[⬆ Back to Top](#python-practice--automation-hub)
+
+</div>
