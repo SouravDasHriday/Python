@@ -1,8 +1,9 @@
+# importing a library to run shell commands for terraform commands:
 import subprocess
 
-TERRAFORM_DIRECTORY = "/home/ubuntu/PYTHON_PRACTICE/project_01/terraform-automation/terraform"
+TERRAFORM_DIRECTORY = "/home/ubuntu/PYTHON_PRACTICE/project_01/terraform-automation/terraform" # terraform directory path
 
-
+# declare a function to run terraform commands:
 def run_terraform(command):
     result = subprocess.run(
         command,
@@ -14,20 +15,43 @@ def run_terraform(command):
     return result
 
 
-try:
-#    result = run_terraform(["terraform", "init"])
-#    result = run_terraform(["terraform", "plan"])
-#    result = run_terraform(["terraform", "apply", "-auto-approve"])
-    result = run_terraform(["terraform", "destroy", "-auto-approve"])
-    print(result.stdout)
+while True:
+    print("\nAvailable Terraform Commands:")
+    print("-----------------------------------")
+    print("init")
+    print("plan")
+    print("apply")
+    print("destroy")
+    print("exit")
+    user_input = input("\nEnter a Terraform command (or 'exit' to quit):  ").strip().lower()
 
-except subprocess.CalledProcessError as error:
-    print("Terraform command failed!\n")
+    if user_input == "exit":
+        print("Exiting the program.")
+        break
 
-    print("Return Code:", error.returncode)
+    commands = {
+            "init": ["terraform", "init"],
+            "plan": ["terraform", "plan"],
+            "apply": ["terraform", "apply", "-auto-approve"],
+            "destroy": ["terraform", "destroy", "-auto-approve"],
+            }
 
-    print("\n----- STDOUT -----")
-    print(error.stdout)
+    try:
+        if user_input in commands:
+            command = commands[user_input]
+            result = run_terraform(command)
+            print("\n✅ Terraform command executed successfully.")
+            print("\n------STDOUT------")
+            print(result.stdout)
+            print("\n------STDERR------")
+            print(result.stderr)
+        else:
+            print("Invalid command. Please try again.")
 
-    print("\n----- STDERR -----")
-    print(error.stderr)
+    except subprocess.CalledProcessError as error:
+        print("\n❌ Terraform command failed.")
+        print("\nReturn code:", error.returncode)
+        print("\n------STDOUT------")
+        print(error.stdout)
+        print("\n------STDERR------")
+        print(error.stderr)
